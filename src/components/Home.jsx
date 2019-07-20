@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-import { Jumbotron, Container, Row, Col, Image, Button } from 'react-bootstrap';
+import { Jumbotron, Grid, Row, Col, Image, Button } from 'react-bootstrap';
 import './Home.css';
 
 export default class Home extends Component {
   render() {
     return (
-      <Container>
+      <Grid>
         <Jumbotron>
           <h2>Welcome to CodeLife</h2>
           <p>This is how to build a website with React, React-Router & React-Bootstrap</p>
@@ -31,7 +31,7 @@ export default class Home extends Component {
             <p>That's a crooked tree. We'll send him to Washington. These little son of a guns hide in your brush and you just have to push them out.</p>
           </Col>
         </Row>
-      </Container>
+      </Grid>
     )
   }
 }

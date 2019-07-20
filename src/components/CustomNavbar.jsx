@@ -7,13 +7,13 @@ export default class CustomNavbar extends Component {
   render() {
     return (
       <Navbar default collapseOnSelect>
-        <>
-        <Navbar.Brand>
-          <Link to="/">CodeLife</Link>
-        </Navbar.Brand>
-        <Navbar.Toggle />
-          </>
-       <Navbar.Collapse>
+        <Navbar.Header>
+          <Navbar.Brand>
+            <Link to="/">CodeLife</Link>
+          </Navbar.Brand>
+          <Navbar.Toggle />
+        </Navbar.Header>
+        <Navbar.Collapse>
           <Nav pullRight>
             <NavItem eventKey={1} componentClass={Link} href="/" to="/">
               Home
